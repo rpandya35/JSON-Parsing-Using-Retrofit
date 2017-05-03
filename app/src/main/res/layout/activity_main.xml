@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity.MainActivity">
+
+    <ImageView
+        android:id="@+id/background_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttons_linear_layout"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_company_photo" />
+
+    <LinearLayout
+        android:id="@+id/buttons_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="68dp"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="68dp"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/button_blue"
+            android:onClick="onChatClicked"
+            android:text="@string/chat_button"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/button_text_size" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/button_orange"
+            android:onClick="onLoginClicked"
+            android:text="@string/login_button"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/button_text_size" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/button_mango"
+            android:onClick="onAnimationClicked"
+            android:text="@string/animation_button"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/button_text_size" />
+
+    </LinearLayout>
+
+</RelativeLayout>
